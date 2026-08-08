@@ -1,11 +1,17 @@
 using LibraryManager.Data;
+using LibraryManager.OpenApi;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+{
+    options.AddDocumentTransformer(new LibraryDocumentTransformer());
+    options.AddOperationTransformer(new BookOperationTransformer());
+    options.AddSchemaTransformer(new BookExamplesSchemaTransformer());
+});
 
 builder.Services.AddDbContext<LibraryManagerDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("LibraryManagerDb")));
