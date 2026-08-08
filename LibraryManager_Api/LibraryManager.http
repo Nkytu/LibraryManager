@@ -1,11 +1,41 @@
 @LibraryManager_HostAddress = http://localhost:5007
 
-GET {{LibraryManager_HostAddress}}/todos/
+GET {{LibraryManager_HostAddress}}/api/book
 Accept: application/json
 
 ###
 
-GET {{LibraryManager_HostAddress}}/todos/1
+GET {{LibraryManager_HostAddress}}/api/book/00000000-0000-0000-0000-000000000000
 Accept: application/json
+
+###
+
+POST {{LibraryManager_HostAddress}}/api/book
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "genre": "Software Engineering",
+  "price": 89.9,
+  "stock": 10
+}
+
+###
+
+PUT {{LibraryManager_HostAddress}}/api/book/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "genre": "Software Engineering",
+  "price": 99.9,
+  "stock": 8
+}
+
+###
+
+DELETE {{LibraryManager_HostAddress}}/api/book/00000000-0000-0000-0000-000000000000
 
 ###

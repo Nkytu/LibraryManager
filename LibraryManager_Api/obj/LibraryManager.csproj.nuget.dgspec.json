@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nviana\\source\\repos\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj": {}
+    "C:\\Users\\ndcvi\\Documentos\\Codes\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nviana\\source\\repos\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj": {
+    "C:\\Users\\ndcvi\\Documentos\\Codes\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nviana\\source\\repos\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj",
+        "projectUniqueName": "C:\\Users\\ndcvi\\Documentos\\Codes\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj",
         "projectName": "LibraryManager",
-        "projectPath": "C:\\Users\\nviana\\source\\repos\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj",
-        "packagesPath": "C:\\Users\\nviana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nviana\\source\\repos\\LibraryManager\\LibraryManager_Api\\obj\\",
+        "projectPath": "C:\\Users\\ndcvi\\Documentos\\Codes\\LibraryManager\\LibraryManager_Api\\LibraryManager.csproj",
+        "packagesPath": "C:\\Users\\ndcvi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ndcvi\\Documentos\\Codes\\LibraryManager\\LibraryManager_Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nviana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ndcvi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,17 +50,17 @@
               "target": "Package",
               "version": "[10.0.10, )"
             },
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[10.0.10, )",
-              "autoReferenced": true
+              "version": "[10.0.10, )"
             },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
+            "Microsoft.OpenApi": {
               "target": "Package",
-              "version": "[10.0.10, )",
-              "autoReferenced": true
+              "version": "[2.7.5, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[10.2.3, )"
             }
           },
           "imports": [
@@ -80,28 +74,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[10.0.10, 10.0.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.NativeAOT.win-x64",
-              "version": "[10.0.10, 10.0.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[10.0.10, 10.0.10]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[10.0.10, 10.0.10]"
-            },
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[10.0.10, 10.0.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -525,11 +497,6 @@
             "System.Xml.XPath": "(,4.3.32767]",
             "System.Xml.XPath.XDocument": "(,5.0.32767]"
           }
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }
